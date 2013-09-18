@@ -7,6 +7,7 @@
 "
 " Sections:
 "     - Pathogen
+"     - Powerline
 "     - Syntastic
 "
 """"""""""""""""""""""""""""""
@@ -17,6 +18,16 @@
 """"""""""""""""""""""""""""""
 call pathogen#infect()
 call pathogen#helptags()
+
+
+""""""""""""""""""""""""""""""
+" => Pathogen section
+""""""""""""""""""""""""""""""
+set t_Co=256
+set laststatus=2
+set encoding=utf8
+let g:Powerline_symbols='fancy'
+let Powerline_symbols='compatible'
 
 
 """"""""""""""""""""""""""""""

@@ -14,6 +14,10 @@ mkdir -p ~/.vim/bundle/syntastic; \
 git clone https://github.com/scrooloose/syntastic.git \
 ~/.vim/bundle/syntastic
 
+mkdir -p ~/.vim/bundle/vim-powerline; \
+git clone https://github.com/Lokaltog/vim-powerline.git \
+~/.vim/bundle/vim-powerline
+
 # vimrc
 cp basic.vim ~/.vim/basic.vim
 cp filetypes.vim ~/.vim/filetypes.vim
