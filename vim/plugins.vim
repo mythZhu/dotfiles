@@ -9,6 +9,8 @@
 "     - Pathogen
 "     - Powerline
 "     - Syntastic
+"     - SnipMate
+"     - NERDTree
 "
 """"""""""""""""""""""""""""""
 
@@ -40,3 +42,11 @@ let g:syntastic_check_on_open=0
 let g:syntastic_enable_balloons=1
 let g:syntastic_echo_current_error=1
 let g:syntastic_enable_highlighting=1
+
+
+""""""""""""""""""""""""""""""
+" => NERDTree section
+""""""""""""""""""""""""""""""
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nb :NERDTreeFromBookmark
+map <leader>nf :NERDTreeFind<cr>

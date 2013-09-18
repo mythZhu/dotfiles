@@ -9,14 +9,19 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
 https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-# plugins
+# plugin - syntastic
 mkdir -p ~/.vim/bundle/syntastic; \
 git clone https://github.com/scrooloose/syntastic.git \
 ~/.vim/bundle/syntastic
 
+# plugin - vim-powerline
 mkdir -p ~/.vim/bundle/vim-powerline; \
 git clone https://github.com/Lokaltog/vim-powerline.git \
 ~/.vim/bundle/vim-powerline
+
+# plugin - nerdtree
+mkdir -p ~/.vim/bundle/nerdtree; \
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 # vimrc
 cp basic.vim ~/.vim/basic.vim
