@@ -5,3 +5,6 @@
 
 # tmux.conf
 cp tmux.conf ~/.tmux.conf
+
+# finish
+echo "Install tmux configuration successfully! Enjoy :-)"

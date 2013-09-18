@@ -103,9 +103,6 @@ set novisualbell
 set t_vb=
 set timeoutlen=500
 
-" Add a bit extra margin to the left
-set foldcolumn=0
-
 " Highlight current line
 autocmd WinLeave * set nocursorline nocursorcolumn
 autocmd WinEnter * set cursorline cursorcolumn
