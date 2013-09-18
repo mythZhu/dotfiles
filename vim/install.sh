@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # backup
-[ -e ~/.vim ] && mv ~/.vim ~/.vim_old
+[ -e ~/.vim ] && mv ~/.vim ~/.vim.old
+[ -e ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.old
 
 # pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
@@ -9,8 +10,9 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
 https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 # plugins
-cd ~/.vim/bundle; \
-git clone https://github.com/scrooloose/syntastic.git
+mkdir -p ~/.vim/bundle/syntastic; \
+git clone https://github.com/scrooloose/syntastic.git \
+~/.vim/bundle/syntastic
 
 # vimrc
 cp basic.vim ~/.vim/basic.vim

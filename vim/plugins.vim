@@ -15,7 +15,7 @@
 """"""""""""""""""""""""""""""
 " => Pathogen section
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim/bundle')
+call pathogen#infect()
 call pathogen#helptags()
 
 
