@@ -4,10 +4,15 @@
 [ -e ~/.vim ] && mv ~/.vim ~/.vim.old
 [ -e ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.old
 
-# pathogen
+# manager - pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
 https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+# plugin - nerdtree
+mkdir -p ~/.vim/bundle/nerdtree; \
+git clone https://github.com/scrooloose/nerdtree.git \
+~/.vim/bundle/nerdtree
 
 # plugin - syntastic
 mkdir -p ~/.vim/bundle/syntastic; \
@@ -19,9 +24,10 @@ mkdir -p ~/.vim/bundle/vim-powerline; \
 git clone https://github.com/Lokaltog/vim-powerline.git \
 ~/.vim/bundle/vim-powerline
 
-# plugin - nerdtree
-mkdir -p ~/.vim/bundle/nerdtree; \
-git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+# plugin - vim-multiple-cursors
+mkdir -p ~/.vim/bundle/vim-multiple-cursors; \
+git clone https://github.com/terryma/vim-multiple-cursors.git \
+~/.vim/bundle/vim-multiple-cursors
 
 # vimrc
 cp basic.vim ~/.vim/basic.vim

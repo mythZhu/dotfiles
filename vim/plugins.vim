@@ -23,13 +23,11 @@ call pathogen#helptags()
 
 
 """"""""""""""""""""""""""""""
-" => Pathogen section
+" => NERDTree section
 """"""""""""""""""""""""""""""
-set t_Co=256
-set laststatus=2
-set encoding=utf8
-let g:Powerline_symbols='fancy'
-let Powerline_symbols='compatible'
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nb :NERDTreeFromBookmark
+map <leader>nf :NERDTreeFind<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -45,8 +43,16 @@ let g:syntastic_enable_highlighting=1
 
 
 """"""""""""""""""""""""""""""
-" => NERDTree section
+" => Powerline section
 """"""""""""""""""""""""""""""
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark
-map <leader>nf :NERDTreeFind<cr>
+set t_Co=256
+set laststatus=2
+set encoding=utf8
+let g:Powerline_symbols='fancy'
+let Powerline_symbols='compatible'
+
+
+""""""""""""""""""""""""""""""
+" => MultipleCursors section
+""""""""""""""""""""""""""""""
+let g:multi_cursor_next_key="\<C-s>"
