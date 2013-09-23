@@ -19,10 +19,15 @@ mkdir -p ~/.vim/bundle/syntastic; \
 git clone https://github.com/scrooloose/syntastic.git \
 ~/.vim/bundle/syntastic
 
-# plugin - vim-powerline
+# plugin - powerline
 mkdir -p ~/.vim/bundle/vim-powerline; \
 git clone https://github.com/Lokaltog/vim-powerline.git \
 ~/.vim/bundle/vim-powerline
+
+# plugin - gundo
+mkdir -p ~/.vim/bundle/gundo; \
+git clone http://github.com/sjl/gundo.vim.git \
+~/.vim/bundle/gundo
 
 # vimrc
 cp basic.vim ~/.vim/basic.vim

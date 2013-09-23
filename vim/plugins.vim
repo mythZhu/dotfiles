@@ -50,3 +50,9 @@ set laststatus=2
 set encoding=utf8
 let g:Powerline_symbols='fancy'
 let Powerline_symbols='compatible'
+
+
+""""""""""""""""""""""""""""""
+" => Gundo section
+""""""""""""""""""""""""""""""
+nnoremap <F5> :GundoToggle<CR>
