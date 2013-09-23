@@ -50,9 +50,3 @@ set laststatus=2
 set encoding=utf8
 let g:Powerline_symbols='fancy'
 let Powerline_symbols='compatible'
-
-
-""""""""""""""""""""""""""""""
-" => MultipleCursors section
-""""""""""""""""""""""""""""""
-let g:multi_cursor_next_key="\<C-s>"

@@ -24,11 +24,6 @@ mkdir -p ~/.vim/bundle/vim-powerline; \
 git clone https://github.com/Lokaltog/vim-powerline.git \
 ~/.vim/bundle/vim-powerline
 
-# plugin - vim-multiple-cursors
-mkdir -p ~/.vim/bundle/vim-multiple-cursors; \
-git clone https://github.com/terryma/vim-multiple-cursors.git \
-~/.vim/bundle/vim-multiple-cursors
-
 # vimrc
 cp basic.vim ~/.vim/basic.vim
 cp filetypes.vim ~/.vim/filetypes.vim
