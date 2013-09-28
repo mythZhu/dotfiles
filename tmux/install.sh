@@ -7,7 +7,7 @@
 cp tmux.conf ~/.tmux.conf
 
 # term
-[[ "$TERM" != "xterm-256color" ]] && 
+[ "$TERM"x != "xterm-256color"x ] && 
 echo "Please add 'export TERM=xterm-256color' into your bashrc/zshrc!"
 
 # finish
