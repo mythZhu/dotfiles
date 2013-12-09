@@ -1,5 +1,15 @@
 #!/bin/sh
 
+# check
+tools='vim curl'
+
+for tool in ${tools}; do
+    echo -n "Checking ${tool} ...... "
+    stat=`/usr/bin/which ${tool} &> /dev/null && echo 'YES' || echo 'NO'`
+    echo ${stat}
+    [ ${stat} == 'NO' ] && exit
+done
+
 # backup
 [ -e ~/.vim ] && mv ~/.vim ~/.vim.old
 [ -e ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.old

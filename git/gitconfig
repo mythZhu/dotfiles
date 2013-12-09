@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+
+[user]
+	name = mythZhu
+	email = zxn990@aliyun.com
+
+[push]
+	default = current
