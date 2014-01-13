@@ -5,7 +5,7 @@ tools='vim curl'
 
 for tool in ${tools}; do
     echo -n "Checking ${tool} ...... "
-    stat=`/usr/bin/which ${tool} &> /dev/null && echo 'YES' || echo 'NO'`
+    stat=`/usr/bin/which ${tool} 1>/dev/null 2>&1 && echo 'YES' || echo 'NO'`
     echo ${stat}
     [ ${stat} == 'NO' ] && exit
 done
