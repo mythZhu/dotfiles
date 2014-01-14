@@ -7,7 +7,7 @@ for tool in ${tools}; do
     echo -n "Checking ${tool} ...... "
     stat=`/usr/bin/which ${tool} 1>/dev/null 2>&1 && echo 'YES' || echo 'NO'`
     echo ${stat}
-    [ ${stat} == 'NO' ] && exit
+    [ ${stat} = 'NO' ] && exit
 done
 
 # backup
